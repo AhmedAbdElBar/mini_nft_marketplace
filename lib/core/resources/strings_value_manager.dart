@@ -6,4 +6,7 @@ class StringsValueManager {
       "You can buy and sell the NFTs of the best artists in the world.";
   static const String vGetStartedButton = "Get Started now !";
   static const String vHomePageTitle = "NFT Marketplace";
+  static const String vHomePageCategoryArt = "Art";
+  static const String vHomePageCategoryMusic = "Music";
+  static const String vHomePageCategoryVirtualWorlds = "Virtual Worlds";
 }

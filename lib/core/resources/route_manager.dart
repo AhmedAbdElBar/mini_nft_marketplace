@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../feature/home/home_screen.dart';
-import '../../feature/onBoading/on_boardin_screen.dart';
+import '../../feature/home/screen/home_screen.dart';
+import '../../feature/onBoading/screen/on_boardin_screen.dart';
 
 class RouteManager {
   static Map<String, WidgetBuilder> routes = {

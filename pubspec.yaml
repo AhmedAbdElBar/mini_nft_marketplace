@@ -79,6 +79,8 @@ flutter:
       fonts:
         - asset: assets/fonts/sf_pro_font.otf
           weight: 400
+        - asset: assets/fonts/sf_pro_font_thin_italic.otf
+          weight: 100
         - asset: assets/fonts/sf_pro_font_bold.otf
           weight: 700
 

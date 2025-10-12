@@ -19,7 +19,8 @@ class CustomCardOnBoardingPage extends StatelessWidget {
       borderRadius: BorderRadius.circular(RadiusValueManager.vBR35),
       child: BackdropFilter(
         // to make the box with a blur effect==================
-        filter: ImageFilter.blur(sigmaX: 10, sigmaY: 10),
+        filter: ImageFilter.blur(
+            sigmaX: BlurManager.vB10, sigmaY: BlurManager.vB10),
         child: Container(
           width: double.infinity,
           padding: const EdgeInsets.symmetric(
@@ -59,8 +60,8 @@ class CustomCardOnBoardingPage extends StatelessWidget {
                       StringsValueManager.vOnBoardingDisc,
                       style: TextStyle(
                           color: ColorValueManager.vWhiteColor,
-                          fontSize: FontSizeValueManager.vFS14,
-                          fontWeight: FontWeightManager.vFW300,
+                          fontSize: FontSizeValueManager.vFS11_71,
+                          fontWeight: FontWeightManager.vFW100,
                           fontFamily: FontFamilyManager.vFSF),
                       textAlign: TextAlign.center,
                     ),

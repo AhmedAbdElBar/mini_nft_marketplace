@@ -7,6 +7,8 @@ class Myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      darkTheme: ThemeData.dark(),
       routes: RouteManager.routes,
       initialRoute: RouteNames.onBoarding,
     );
