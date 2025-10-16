@@ -5,6 +5,7 @@ class PaddingValueManager {
   static const double vP30 = 30;
   static const double vP15 = 15;
   static const double vP10 = 10;
+  static const double vP8 = 8.5;
 }
 
 class MarginValueManager {}

@@ -5,8 +5,12 @@ class StringsValueManager {
   static const String vOnBoardingDisc =
       "You can buy and sell the NFTs of the best artists in the world.";
   static const String vGetStartedButton = "Get Started now !";
-  static const String vHomePageTitle = "NFT Marketplace";
-  static const String vHomePageCategoryArt = "Art";
-  static const String vHomePageCategoryMusic = "Music";
-  static const String vHomePageCategoryVirtualWorlds = "Virtual Worlds";
+  static const String vHPTitle = "NFT Marketplace";
+  static const String vHPCArt = "Art";
+  static const String vHPCyMusic = "Music";
+  static const String vHPCVirtualWorlds = "Virtual Worlds";
+  static const String vHPTrending = "Trending collections";
+  static const String vHPT3DArt = "3D Art";
+  static const String vHPTAbstract = "Abstract Art";
+  static const String vHPTPortrait = "Portrait Art";
 }

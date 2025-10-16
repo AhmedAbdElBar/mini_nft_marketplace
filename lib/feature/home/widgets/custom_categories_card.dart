@@ -6,10 +6,10 @@ import 'package:mini_nft_marketplace/core/resources/color_value_manager.dart';
 import 'package:mini_nft_marketplace/core/resources/fonts_value_manager.dart';
 import 'package:mini_nft_marketplace/core/resources/size_value_manager.dart';
 
-class CustomCategoriesImage extends StatelessWidget {
+class CustomCategoriesCard extends StatelessWidget {
   final String imagePath;
   final String imageTitle;
-  const CustomCategoriesImage(
+  const CustomCategoriesCard(
       {super.key, required this.imagePath, required this.imageTitle});
 
   @override

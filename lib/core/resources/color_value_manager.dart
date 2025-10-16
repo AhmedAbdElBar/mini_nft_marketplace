@@ -4,6 +4,7 @@ class ColorValueManager {
   static const Color vBackgroundColor = Color(0xff211134);
   static const Color vWhiteColor = Colors.white;
   static Color vWhiteColorWithOpec_0_2 = Colors.white.withOpacity(0.2);
+  static Color vWhiteColorWithOpec_0_05 = Colors.white.withOpacity(0.05);
   static Color vWhiteColorWithOpec_0 = Colors.white.withOpacity(0);
   static Color vWhiteColorWithOpec = Colors.white.withOpacity(0.1);
   static Color vIndigoColorWithOpec = Colors.indigo.withOpacity(0.2);
