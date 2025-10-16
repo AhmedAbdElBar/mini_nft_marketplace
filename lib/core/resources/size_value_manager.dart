@@ -7,6 +7,7 @@ class HeightValueManager {
   static const double vH10 = 10;
   static const double vH80 = 80;
   static const double vH130 = 130;
+  static const double vH157_52 = 157.52;
   static const double vH54_06 = 54.06;
 }
 
@@ -31,5 +32,6 @@ class IconSizeValueManager {
 class BlurManager {
   static const double vB1 = 1;
   static const double vB4 = 4;
+  static const double vB3 = 3;
   static const double vB10 = 10;
 }

@@ -19,8 +19,12 @@ class CustomCategoriesImage extends StatelessWidget {
       child: Stack(
         alignment: Alignment.bottomCenter,
         children: [
-          Image(
-            image: AssetImage(imagePath),
+          SizedBox(
+            width: WidthValueManager.vW252_26,
+            child: Image(
+              fit: BoxFit.cover,
+              image: AssetImage(imagePath),
+            ),
           ),
           ClipRRect(
             borderRadius: const BorderRadius.only(
