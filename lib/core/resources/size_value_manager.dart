@@ -11,6 +11,7 @@ class HeightValueManager {
   static const double vH139_64 = 139.64;
   static const double vH157_52 = 157.52;
   static const double vH194_89 = 194.89;
+  static const double vH236_04 = 236.04;
   static const double vH54_06 = 54.06;
 }
 

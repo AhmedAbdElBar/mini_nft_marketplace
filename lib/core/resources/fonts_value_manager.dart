@@ -4,6 +4,7 @@ class FontSizeValueManager {
   static const double vFS15_32 = 15.32;
   static const double vF25_23 = 25.23;
   static const double vFS11_71 = 11.71;
+  static const double vFS10 = 10;
   static const double vFS19_82 = 19.82;
   static const double vFS20 = 20;
   static const double vFS25 = 25;
