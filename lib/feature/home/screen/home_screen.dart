@@ -5,11 +5,11 @@ import 'package:mini_nft_marketplace/core/resources/fonts_value_manager.dart';
 import 'package:mini_nft_marketplace/core/resources/padding_margin_value_manager.dart';
 import 'package:mini_nft_marketplace/core/resources/size_value_manager.dart';
 import 'package:mini_nft_marketplace/core/resources/strings_value_manager.dart';
+import 'package:mini_nft_marketplace/feature/home/widgets/custom_bottom_navigation_bar.dart';
 import 'package:mini_nft_marketplace/feature/home/widgets/custom_top_seller_card.dart';
 import 'package:mini_nft_marketplace/feature/home/widgets/custom_categories_card.dart';
 import 'package:mini_nft_marketplace/feature/home/widgets/custom_section_title.dart';
 import 'package:mini_nft_marketplace/feature/home/widgets/custom_trending_card.dart';
-
 import '../../../core/constants/constants.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -18,7 +18,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      extendBodyBehindAppBar: true, //  AppBar
+      extendBody: true,
+      extendBodyBehindAppBar: true,
+
+      //* AppBar
       appBar: AppBar(
         backgroundColor: Colors.transparent,
         centerTitle: true,
@@ -29,17 +32,17 @@ class HomeScreen extends StatelessWidget {
           textAlign: TextAlign.center,
           style: TextStyle(
             fontFamily: FontFamilyManager.vFSF,
-            fontSize: FontSizeValueManager.vF25_23,
+            fontSize: FontSizeValueManager.vFS25_23,
             fontWeight: FontWeightManager.vFBold,
             color: ColorValueManager.vWhiteColor,
           ),
         ),
       ),
 
+      //* Body
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        //* background image for home screen
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(ImagesValueManager.vAHBackground),
@@ -51,12 +54,13 @@ class HomeScreen extends StatelessWidget {
             physics: const BouncingScrollPhysics(),
             child: Padding(
               padding: const EdgeInsets.symmetric(
-                  horizontal: PaddingValueManager.vP8,
-                  vertical: PaddingValueManager.vP10),
+                horizontal: PaddingValueManager.vP8,
+                vertical: PaddingValueManager.vP10,
+              ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  //* category section
+                  //* Category Section
                   SizedBox(
                     height: HeightValueManager.vH157_52,
                     child: ListView.separated(
@@ -66,22 +70,23 @@ class HomeScreen extends StatelessWidget {
                         imagePath: Constants.categoryList[index].image,
                         imageTitle: Constants.categoryList[index].title,
                       ),
-                      separatorBuilder: (context, index) => const SizedBox(
-                        width: WidthValueManager.vW10,
-                      ),
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(width: WidthValueManager.vW10),
                       itemCount: Constants.categoryList.length,
                     ),
                   ),
-                  const SizedBox(height: 24),
-                  //*trending section
-                  /// trending title
+
+                  const SizedBox(height: HeightValueManager.vH24),
+
+                  //* Trending Section
                   const CustomSectionTitle(
                       title: StringsValueManager.vHPTrending),
 
-                  ///trending cards
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.23,
+                    height: MediaQuery.of(context).size.height *
+                        HeightValueManager.vHTrendingSection,
                     child: ListView.separated(
+                      shrinkWrap: true,
                       physics: const BouncingScrollPhysics(),
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) => CustomTrendingCard(
@@ -89,22 +94,23 @@ class HomeScreen extends StatelessWidget {
                         title: Constants.trendingList[index].title,
                         count: Constants.trendingList[index].count,
                       ),
-                      separatorBuilder: (context, index) => const SizedBox(
-                        width: WidthValueManager.vW10,
-                      ),
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(width: WidthValueManager.vW10),
                       itemCount: Constants.trendingList.length,
                     ),
                   ),
-                  const SizedBox(height: 24),
-                  //* top seller section
-                  /// top seller title
+
+                  const SizedBox(height: HeightValueManager.vH24),
+
+                  //* Top Seller Section
                   const CustomSectionTitle(
                       title: StringsValueManager.vHPTopSeller),
 
-                  /// top seller cards
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.28,
+                    height: MediaQuery.of(context).size.height *
+                        HeightValueManager.vHTopSellerSection,
                     child: ListView.separated(
+                      shrinkWrap: true,
                       physics: const BouncingScrollPhysics(),
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) => CustomTopSellerCard(
@@ -114,18 +120,22 @@ class HomeScreen extends StatelessWidget {
                         count1: Constants.topSellerList[index].count1,
                         count2: Constants.topSellerList[index].count2,
                       ),
-                      separatorBuilder: (context, index) => const SizedBox(
-                        width: WidthValueManager.vW10,
-                      ),
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(width: WidthValueManager.vW10),
                       itemCount: Constants.topSellerList.length,
                     ),
                   ),
-                  const SizedBox(height: 24),
-                  //* Hot new items section
+
+                  const SizedBox(height: HeightValueManager.vH24),
+
+                  //* Hot Items Section
                   const CustomSectionTitle(title: StringsValueManager.vHPHot),
+
                   SizedBox(
-                    height: MediaQuery.of(context).size.height * 0.28,
+                    height: MediaQuery.of(context).size.height *
+                        HeightValueManager.vHTopSellerSection,
                     child: ListView.separated(
+                      shrinkWrap: true,
                       physics: const BouncingScrollPhysics(),
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) => CustomTopSellerCard(
@@ -135,9 +145,8 @@ class HomeScreen extends StatelessWidget {
                         count1: Constants.hotItemsList[index].count1,
                         count2: Constants.hotItemsList[index].count2,
                       ),
-                      separatorBuilder: (context, index) => const SizedBox(
-                        width: WidthValueManager.vW10,
-                      ),
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(width: WidthValueManager.vW10),
                       itemCount: Constants.hotItemsList.length,
                     ),
                   ),
@@ -147,6 +156,9 @@ class HomeScreen extends StatelessWidget {
           ),
         ),
       ),
+
+      //* Bottom Navigation Bar
+      bottomNavigationBar: const CustomBottomNavigationBar(),
     );
   }
 }

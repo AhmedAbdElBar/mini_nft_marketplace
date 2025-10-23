@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mini_nft_marketplace/core/resources/color_value_manager.dart';
 import 'package:mini_nft_marketplace/core/resources/padding_margin_value_manager.dart';
 import 'package:mini_nft_marketplace/feature/onBoading/widgets/custom_componenet_on_boarding_page.dart';
 import 'package:mini_nft_marketplace/feature/onBoading/widgets/custom_image_onboarding_background.dart';
@@ -12,7 +13,7 @@ class OnBoardingScreen extends StatelessWidget {
         children: [
           const CustomizedImageOnboardingBackground(),
           Container(
-            color: Colors.black.withOpacity(0.2),
+            color: ColorValueManager.vBlackColorWithOpc,
             child: const SafeArea(
               child: Padding(
                 padding: EdgeInsets.symmetric(
