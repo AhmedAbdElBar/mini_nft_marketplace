@@ -15,7 +15,7 @@ class CustomCategoriesCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(RadiusValueManager.vBR27),
+      borderRadius: BorderRadiusManager.vBR27,
       child: Stack(
         alignment: Alignment.bottomCenter,
         children: [
@@ -43,8 +43,8 @@ class CustomCategoriesCard extends StatelessWidget {
                         begin: Alignment.topCenter,
                         end: Alignment.bottomCenter,
                         colors: [
-                      ColorValueManager.vWhiteColorWithOpec_0,
-                      ColorValueManager.vWhiteColorWithOpec_0_2
+                      ColorValueManager.vTransparent,
+                      ColorValueManager.vWhiteOpec_0_2
                     ])),
                 child: Text(
                   imageTitle,

@@ -20,7 +20,7 @@ class CustomTrendingCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(RadiusValueManager.vBR27),
+      borderRadius: BorderRadiusManager.vBR27,
       child: BackdropFilter(
         filter:
             ImageFilter.blur(sigmaX: BlurManager.vB1, sigmaY: BlurManager.vB4),
@@ -35,11 +35,10 @@ class CustomTrendingCard extends StatelessWidget {
                 width: WidthValueManager.vW157_66,
                 height: HeightValueManager.vH194_89,
                 decoration: BoxDecoration(
-                    color: ColorValueManager.vWhiteColorWithOpec_0_05,
-                    borderRadius:
-                        BorderRadius.circular(RadiusValueManager.vBR27),
-                    border: Border.all(
-                        color: ColorValueManager.vWhiteColorWithOpec_0_05)),
+                    color: ColorValueManager.vWhiteOpec_0_05,
+                    borderRadius: BorderRadiusManager.vBR27,
+                    border:
+                        Border.all(color: ColorValueManager.vWhiteOpec_0_05)),
               ),
               Padding(
                 padding: const EdgeInsets.all(PaddingValueManager.vP10),

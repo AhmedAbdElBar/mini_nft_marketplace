@@ -13,7 +13,7 @@ class OnBoardingScreen extends StatelessWidget {
         children: [
           const CustomizedImageOnboardingBackground(),
           Container(
-            color: ColorValueManager.vBlackColorWithOpc,
+            color: ColorValueManager.vBlackOpec_0_2,
             child: const SafeArea(
               child: Padding(
                 padding: EdgeInsets.symmetric(

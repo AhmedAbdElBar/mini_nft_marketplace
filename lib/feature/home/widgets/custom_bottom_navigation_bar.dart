@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:mini_nft_marketplace/core/resources/border_radius_manager.dart';
 import 'package:mini_nft_marketplace/core/resources/color_value_manager.dart';
+import 'package:mini_nft_marketplace/core/resources/route_manager.dart';
 import 'package:mini_nft_marketplace/core/resources/size_value_manager.dart';
 
 class CustomBottomNavigationBar extends StatelessWidget {
@@ -29,7 +30,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
                 height: HeightValueManager.vH90,
                 decoration: BoxDecoration(
                   border: Border.all(
-                    color: ColorValueManager.vWhiteColorWithOpec_0_05,
+                    color: ColorValueManager.vWhiteOpec_0_05,
                     width: WidthValueManager.vW1_5,
                   ),
                   borderRadius: const BorderRadius.only(
@@ -37,29 +38,36 @@ class CustomBottomNavigationBar extends StatelessWidget {
                     topRight: Radius.circular(RadiusValueManager.vBR45),
                   ),
                 ),
-                child: const Row(
+                child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Icon(
-                      Icons.home,
-                      color: ColorValueManager.vWhiteColor,
-                      size: IconSizeValueManager.vI27,
+                    const InkWell(
+                      child: Icon(
+                        Icons.home,
+                        color: ColorValueManager.vWhiteColor,
+                        size: IconSizeValueManager.vI27,
+                      ),
                     ),
-                    Icon(
-                      Icons.stacked_bar_chart_rounded,
-                      color: ColorValueManager.vWhiteColor,
-                      size: IconSizeValueManager.vI27,
+                    IconButton(
+                      onPressed: () {
+                        Navigator.pushNamed(context, RouteNames.state);
+                      },
+                      icon: const Icon(
+                        Icons.stacked_bar_chart_rounded,
+                        color: ColorValueManager.vWhiteColor,
+                        size: IconSizeValueManager.vI27,
+                      ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: WidthValueManager.vW30,
                       height: HeightValueManager.vH30,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.search_rounded,
                       color: ColorValueManager.vWhiteColor,
                       size: IconSizeValueManager.vI27,
                     ),
-                    Icon(
+                    const Icon(
                       Icons.person,
                       color: ColorValueManager.vWhiteColor,
                       size: IconSizeValueManager.vI27,
@@ -79,7 +87,7 @@ class CustomBottomNavigationBar extends StatelessWidget {
                   sides: 6,
                   pointRounding: 0.3,
                 ),
-                color: ColorValueManager.vWhiteColorWithOpec_0_5,
+                color: ColorValueManager.vWhiteOpec_0_5,
               ),
               child: const Icon(
                 Icons.add,

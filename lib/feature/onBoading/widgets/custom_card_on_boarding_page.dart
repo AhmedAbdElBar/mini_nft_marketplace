@@ -16,7 +16,7 @@ class CustomCardOnBoardingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipRRect(
-      borderRadius: BorderRadius.circular(RadiusValueManager.vBR35),
+      borderRadius: BorderRadiusManager.vBR35,
       child: BackdropFilter(
         // to make the box with a blur effect==================
         filter: ImageFilter.blur(
@@ -27,10 +27,10 @@ class CustomCardOnBoardingPage extends StatelessWidget {
               vertical: PaddingValueManager.vP40,
               horizontal: PaddingValueManager.vP20),
           decoration: BoxDecoration(
-              color: ColorValueManager.vWhiteColorWithOpec,
-              borderRadius: BorderRadius.circular(RadiusValueManager.vBR35),
+              color: Colors.white10,
+              borderRadius: BorderRadiusManager.vBR35,
               border: Border.all(
-                  color: ColorValueManager.vWhiteColorWithOpec, width: 1.5)),
+                  color: ColorValueManager.vWhiteOpec_0_1, width: 1.5)),
           //* ===============================
           //* 🔹 Card Content
           //* ===============================
@@ -76,12 +76,11 @@ class CustomCardOnBoardingPage extends StatelessWidget {
               //* -------------------------------
               ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: ColorValueManager.vIndigoColorWithOpec,
+                  backgroundColor: ColorValueManager.vIndigoOpec_0_2,
                   shape: RoundedRectangleBorder(
-                    borderRadius:
-                        BorderRadius.circular(RadiusValueManager.vBR35),
+                    borderRadius: BorderRadiusManager.vBR35,
                     side: BorderSide(
-                      color: ColorValueManager.vWhiteColorWithOpec,
+                      color: ColorValueManager.vWhiteOpec_0_1,
                       width: WidthValueManager.vW1_5,
                     ),
                   ),
