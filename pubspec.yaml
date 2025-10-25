@@ -83,6 +83,8 @@ flutter:
           weight: 100
         - asset: assets/fonts/sf_pro_font_bold.otf
           weight: 700
+        - asset: assets/fonts/sf_500_font.otf
+          weight: 500
 
   #       - asset: fonts/Schyler-Italic.ttf
   #         style: italic

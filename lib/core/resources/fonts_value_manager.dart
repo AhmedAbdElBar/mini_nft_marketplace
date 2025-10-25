@@ -24,6 +24,7 @@ class FontSizeValueManager {
 class FontWeightManager {
   static const FontWeight vFW100 = FontWeight.w100;
   static const FontWeight vFW300 = FontWeight.w300;
+  static const FontWeight vFW500 = FontWeight.w500;
   static const FontWeight vFW600 = FontWeight.w600;
   static const FontWeight vFBold = FontWeight.w700;
 }

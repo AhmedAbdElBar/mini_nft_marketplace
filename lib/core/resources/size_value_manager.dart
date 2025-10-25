@@ -3,6 +3,7 @@ class HeightValueManager {
   static const double vHTopSellerSection = 0.28;
   static const double vH400 = 400;
   static const double vH50 = 50;
+  static const double vH2 = 2;
   static const double vH24 = 24;
   static const double vH30 = 30;
   static const double vH60 = 60;
@@ -25,6 +26,7 @@ class HeightValueManager {
 class WidthValueManager {
   static const double vW20 = 20;
   static const double vW10 = 10;
+  static const double vW5 = 5;
   static const double vW55 = 55;
   static const double vW30 = 30;
   static const double vW70 = 70;
@@ -43,6 +45,7 @@ class FlexValueManager {
 class IconSizeValueManager {
   static const double vI24 = 24;
   static const double vI27 = 27;
+  static const double vI20 = 20;
   static const double vI17 = 17;
 }
 
@@ -53,4 +56,9 @@ class BlurManager {
   static const double vB10 = 10;
   static const double vB50 = 50;
   static const double vB100 = 100;
+}
+
+class BlurRadiusManager {
+  static const double vBr10 = 10;
+  static const double vSpreadRadius = 2;
 }

@@ -5,6 +5,7 @@ class StringsValueManager {
   static const String vOnBoardingDisc =
       "You can buy and sell the NFTs of the best artists in the world.";
   static const String vGetStartedButton = "Get Started now !";
+  //? home screen
   static const String vHPTitle = "NFT Marketplace";
   //* categories
   static const String vHPCArt = "Art";
@@ -33,4 +34,8 @@ class StringsValueManager {
   static const String vHPH_2_2 = "baalli #4890";
   static const String vHPH_3_2 = "Ring #7288";
   static const String vHPH_4_2 = "Beer #1238";
+  //? state screen
+  static const String vSTitle = "Stats";
+  static const String vSRanking = "Ranking";
+  static const String vSActivity = "Activity";
 }
