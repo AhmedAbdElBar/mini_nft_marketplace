@@ -56,7 +56,7 @@ class _CustomTextButtonForStatsState extends State<CustomTextButtonForStats> {
             decoration: BoxDecoration(
               color: ColorValueManager.vIndigoShadow,
               borderRadius: BorderRadiusManager.vBR20,
-              boxShadow: [
+              boxShadow: const [
                 BoxShadow(
                   color: ColorValueManager.vIndigoShadow,
                   blurRadius: RadiusValueManager.vBR10,

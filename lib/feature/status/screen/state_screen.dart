@@ -72,7 +72,7 @@ class _StateScreenState extends State<StateScreen> {
                 )
               ],
             ),
-            Divider(
+            const Divider(
               color: ColorValueManager.vIndigoShadow,
             ),
             buildContent(selectedIndex),

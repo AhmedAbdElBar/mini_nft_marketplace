@@ -3,6 +3,7 @@ import 'package:mini_nft_marketplace/core/resources/strings_value_manager.dart';
 import 'package:mini_nft_marketplace/feature/models/category_model.dart';
 import 'package:mini_nft_marketplace/feature/models/other_section_model.dart';
 import 'package:mini_nft_marketplace/feature/models/trending_model.dart';
+import 'package:mini_nft_marketplace/feature/status/models/ranking_model.dart';
 
 class Constants {
   static List<CategoryModel> categoryList = [
@@ -47,5 +48,55 @@ class Constants {
         StringsValueManager.vHPH_3_2, 0.26, 200),
     OtherSectionModel(ImagesValueManager.vAH_4, StringsValueManager.vHPH_4,
         StringsValueManager.vHPH_4_2, 0.26, 200),
+  ];
+  static List<RankingModel> rankingList = [
+    RankingModel(
+        imagePath: ImagesValueManager.vATS_1,
+        title: "art",
+        supTitle: "hi",
+        count: 5000,
+        percentage: "20%"),
+    RankingModel(
+        imagePath: ImagesValueManager.vATS_1,
+        title: "art",
+        supTitle: "hi",
+        count: 5000,
+        percentage: "20%"),
+    RankingModel(
+        imagePath: ImagesValueManager.vATS_1,
+        title: "art",
+        supTitle: "hi",
+        count: 5000,
+        percentage: "20%"),
+    RankingModel(
+        imagePath: ImagesValueManager.vATS_1,
+        title: "art",
+        supTitle: "hi",
+        count: 5000,
+        percentage: "20%"),
+    RankingModel(
+        imagePath: ImagesValueManager.vATS_1,
+        title: "art",
+        supTitle: "hi",
+        count: 5000,
+        percentage: "20%"),
+    RankingModel(
+        imagePath: ImagesValueManager.vATS_1,
+        title: "art",
+        supTitle: "hi",
+        count: 5000,
+        percentage: "20%"),
+    RankingModel(
+        imagePath: ImagesValueManager.vATS_1,
+        title: "art",
+        supTitle: "hi",
+        count: 5000,
+        percentage: "20%"),
+    RankingModel(
+        imagePath: ImagesValueManager.vATS_1,
+        title: "art",
+        supTitle: "hi",
+        count: 5000,
+        percentage: "20%"),
   ];
 }

@@ -19,7 +19,7 @@ class ColorValueManager {
   // 🔵 Indigo / Blue Shades
   static const Color vDarkBlueColor = Colors.indigo;
   static final Color vIndigoOpec_0_2 = Colors.indigo.withValues(alpha: 0.2);
-  static final Color vIndigoShadow = Color(0xFF7929C2);
+  static const Color vIndigoShadow = Color(0xFF7929C2);
 
   // ⚙️ Gray Shades
   static const Color vGrayColor = Colors.grey;
