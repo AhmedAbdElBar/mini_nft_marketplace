@@ -89,7 +89,7 @@ class CustomCardOnBoardingPage extends StatelessWidget {
                       horizontal: PaddingValueManager.vP40),
                 ),
                 onPressed: () {
-                  Navigator.pushNamed(context, RouteNames.home);
+                  Navigator.pushReplacementNamed(context, RouteNames.home);
                 },
                 child: const Text(
                   StringsValueManager.vGetStartedButton,

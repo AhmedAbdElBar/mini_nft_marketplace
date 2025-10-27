@@ -45,9 +45,11 @@ class _StateScreenState extends State<StateScreen> {
       body: SafeArea(
         child: Column(
           children: [
+            //* ranking and activity buttons
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
+                /// ranking button
                 CustomTextButtonForStats(
                     title: StringsValueManager.vSRanking,
                     icon: Icons.stacked_bar_chart_rounded,
@@ -60,6 +62,8 @@ class _StateScreenState extends State<StateScreen> {
                 const SizedBox(
                   width: WidthValueManager.vW20,
                 ),
+
+                /// activity button
                 CustomTextButtonForStats(
                   title: StringsValueManager.vSActivity,
                   icon: Icons.trending_up_rounded,
@@ -75,6 +79,7 @@ class _StateScreenState extends State<StateScreen> {
             const Divider(
               color: ColorValueManager.vIndigoShadow,
             ),
+            //* function to display (ranking,activity) content
             buildContent(selectedIndex),
           ],
         ),

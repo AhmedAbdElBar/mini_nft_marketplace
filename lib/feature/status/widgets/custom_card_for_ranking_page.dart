@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:mini_nft_marketplace/core/resources/color_value_manager.dart';
+import 'package:mini_nft_marketplace/core/resources/fonts_value_manager.dart';
 import 'package:mini_nft_marketplace/core/resources/padding_margin_value_manager.dart';
+import 'package:mini_nft_marketplace/core/resources/size_value_manager.dart';
 
 class CustomCardForRankingPage extends StatelessWidget {
   const CustomCardForRankingPage(
@@ -20,35 +23,64 @@ class CustomCardForRankingPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(
-          horizontal: PaddingValueManager.vP8,
-          vertical: PaddingValueManager.vP10),
-      height: 80,
+      padding: const EdgeInsets.all(PaddingValueManager.vP10),
+      height: HeightValueManager.vH80,
       child: Row(
         children: [
           Text("${index + 1}"),
           const SizedBox(
-            width: 5,
+            width: WidthValueManager.vW10,
           ),
           Image(
             image: AssetImage(imagePath),
           ),
           const SizedBox(
-            width: 5,
+            width: HeightValueManager.vH10,
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(title),
-              Text(supTitle),
+              Text(
+                title,
+                style: const TextStyle(
+                    fontFamily: FontFamilyManager.vFSF,
+                    fontWeight: FontWeightManager.vFBold,
+                    fontSize: FontSizeValueManager.vFS15_32,
+                    color: ColorValueManager.vWhiteColor),
+              ),
+              Text(
+                supTitle,
+                style: const TextStyle(
+                    fontFamily: FontFamilyManager.vFSF,
+                    fontWeight: FontWeightManager.vFW300,
+                    fontSize: FontSizeValueManager.vFS11_71,
+                    color: ColorValueManager.vWhiteColor),
+              ),
             ],
           ),
           const Spacer(),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("$count"),
-              Text(percentage),
+              Row(
+                children: [
+                  const Icon(
+                    Icons.add,
+                    color: ColorValueManager.vGrayColor,
+                    size: IconSizeValueManager.vI13_51,
+                  ),
+                  Text(
+                    "$count",
+                    style: const TextStyle(
+                      color: ColorValueManager.vWhiteColor,
+                    ),
+                  ),
+                ],
+              ),
+              Text(
+                percentage,
+                style: const TextStyle(color: ColorValueManager.vGreenColor),
+              ),
             ],
           )
         ],

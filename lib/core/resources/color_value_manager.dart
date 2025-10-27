@@ -27,4 +27,6 @@ class ColorValueManager {
 
   // 🟡 Transparent
   static const Color vTransparent = Colors.transparent;
+  static const Color vGreenColor = Colors.green;
+  static const Color vRedColor = Colors.red;
 }

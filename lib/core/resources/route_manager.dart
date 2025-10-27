@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:mini_nft_marketplace/feature/onBoarding/screen/on_boarding_screen.dart';
 import 'package:mini_nft_marketplace/feature/status/screen/state_screen.dart';
 import '../../feature/home/screen/home_screen.dart';
-import '../../feature/onBoading/screen/on_boardin_screen.dart';
 
 class RouteManager {
   static Map<String, WidgetBuilder> routes = {

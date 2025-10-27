@@ -1,22 +1,31 @@
+/// 🧩 Strings Value Manager — Contains all static app text constants
 class StringsValueManager {
-  //*onboarding screen
+  //* ============================================================
+  //* 🟣 Onboarding Screen
+  //* ============================================================
   static const String vOnBoardingTitle = "Welcome to\nNFT Marketplace";
   static const String vOnBoardingSupTitle = "Explore and Mint NFTs";
   static const String vOnBoardingDisc =
       "You can buy and sell the NFTs of the best artists in the world.";
   static const String vGetStartedButton = "Get Started now !";
-  //? home screen
+
+  //* ============================================================
+  //* 🏠 Home Screen
+  //* ============================================================
   static const String vHPTitle = "NFT Marketplace";
-  //* categories
+
+  // 🧱 Categories Section
   static const String vHPCArt = "Art";
   static const String vHPCyMusic = "Music";
   static const String vHPCVirtualWorlds = "Virtual Worlds";
-  //* trending
+
+  // 🔥 Trending Section
   static const String vHPTrending = "Trending collections";
   static const String vHPT3DArt = "3D Art";
   static const String vHPTAbstract = "Abstract Art";
   static const String vHPTPortrait = "Portrait Art";
-  //* top seller
+
+  // 🏆 Top Seller Section
   static const String vHPTopSeller = "Top seller";
   static const String vHPTs_1 = "Abstract Pink";
   static const String vHPTs_2 = "Wave";
@@ -24,7 +33,8 @@ class StringsValueManager {
   static const String vHPTs_1_2 = "abstract #2538";
   static const String vHPTs_2_2 = "wav2 #5672";
   static const String vHPTs_3_2 = "wavepi #5267";
-  //* hot items
+
+  // 🔥 Hot Items Section
   static const String vHPHot = "Hot new items";
   static const String vHPH_1 = "Music";
   static const String vHPH_2 = "Ball";
@@ -34,8 +44,13 @@ class StringsValueManager {
   static const String vHPH_2_2 = "baalli #4890";
   static const String vHPH_3_2 = "Ring #7288";
   static const String vHPH_4_2 = "Beer #1238";
-  //? state screen
+
+  //* ============================================================
+  //*📊 Stats Screen
+  //* ============================================================
   static const String vSTitle = "Stats";
   static const String vSRanking = "Ranking";
   static const String vSActivity = "Activity";
+  static const String vSAllCategories = "All Categories";
+  static const String vSAllChains = "All Chains";
 }
